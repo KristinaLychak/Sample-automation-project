@@ -8,13 +8,9 @@ public class AgeCheckerTest {
     @Test
     public void TestAgedUserCanPlay() {
         AgeChecker ageChecker = new AgeChecker();
-        Assert.assertTrue(ageChecker.CanPlayGame(22), "Aged user can play game");
+        Assert.assertTrue(ageChecker.CanPlayGame(22), "Aged user can't play game");
     }
 
-    @Test
-    public void testThatTooYongUsersCanNotPlay () {
-        AgeChecker ageChecker = new AgeChecker();
-        Assert.assertFalse(ageChecker.CanPlayGame(17), "Aged user can play game");
-    }
+
 
 }
